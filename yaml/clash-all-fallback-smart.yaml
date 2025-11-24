@@ -3,104 +3,961 @@
 # ========================
 
 # 机场节点订阅
-
-proxy-providers:
-
-  火烧云:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连 
-    
-  冰云:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  小牛:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  硅谷:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
   
-  无界:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-   
-  猫耳:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-
-  快猫:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连 
-    
-  BestVPN:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连
-
-  牛逼:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连
-
 proxies:
   - {name: 直连, type: direct}
   - {name: 拒绝, type: reject}
-
-# ========================
+  - { name: '剩余流量：1306.26 GB', type: trojan, server: hxfz940e90d9.bdytul.com, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: 套餐到期：长期有效, type: trojan, server: hxfz940e90d9.bdytul.com, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🏘️ 官网：hongxingdl.club', type: trojan, server: hxfz940e90d9.bdytul.com, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🔗 节点异常请刷新订阅', type: trojan, server: hxfz940e90d9.bdytul.com, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: 🙂刷新失败请到官网重新导入(需重登账号), type: trojan, server: hxfz940e90d9.bdytul.com, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇭🇰 香港中转', type: trojan, server: hxfz940e90d9.bdytul.com, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇭🇰 香港中转 - 东莞', type: trojan, server: hxdwa7a919e0.bdytul.com, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇭🇰 香港中转 - 广州', type: trojan, server: hxsz6a2b8299.bdytul.com, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇨🇳 台湾中转', type: trojan, server: hxfz940e90d9.bdytul.com, port: 42765, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇨🇳 台湾中转 - 东莞', type: trojan, server: hxdwa7a919e0.bdytul.com, port: 42765, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇨🇳 台湾中转 - 广州', type: trojan, server: hxsz6a2b8299.bdytul.com, port: 42765, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇸🇬 新加坡中转', type: trojan, server: hxfz940e90d9.bdytul.com, port: 48291, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇸🇬 新加坡中转 - 东莞', type: trojan, server: hxdwa7a919e0.bdytul.com, port: 18489, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇸🇬 新加坡中转 - 广州', type: trojan, server: hxsz6a2b8299.bdytul.com, port: 18489, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇯🇵 日本中转', type: trojan, server: hxfz940e90d9.bdytul.com, port: 28713, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇯🇵 日本中转 - 广州', type: trojan, server: hxsz6a2b8299.bdytul.com, port: 28713, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇯🇵 日本中转 - 东莞', type: trojan, server: hxdwa7a919e0.bdytul.com, port: 28713, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇺🇸 美国中转', type: trojan, server: hxfz940e90d9.bdytul.com, port: 21489, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇺🇸 美国中转 - 广州', type: trojan, server: hxsz6a2b8299.bdytul.com, port: 21489, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇺🇸 美国中转 - 东莞', type: trojan, server: hxdwa7a919e0.bdytul.com, port: 21489, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇺🇸 美国中转原生', type: trojan, server: hxfz940e90d9.bdytul.com, port: 53547, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇭🇰 香港直连1 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 20461, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇭🇰 香港直连2 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 20461, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇨🇳 台湾直连1 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 48597, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇨🇳 台湾直连2 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 48597, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇸🇬 新加坡直连1 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 31183, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇸🇬 新加坡直连2 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 31183, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇯🇵 日本直连1 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 17371, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇯🇵 日本直连2 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 17371, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇺🇸 美国直连1 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 56449, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇺🇸 美国直连2 - 0.5倍率', server: hxzlaws.redapricotcandy.com, port: 56449, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 621b6b11-2a77-4b52-b174-afa42875ef32 }
+  - { name: '🇭🇰香港 IPV6', type: trojan, server: hxipv6.hongxingdl.vip, port: 12221, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇨🇳 台湾 IPV6', type: trojan, server: hxipv6.hongxingdl.vip, port: 42765, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇸🇬 新加坡 IPV6', type: trojan, server: hxipv6.hongxingdl.vip, port: 48291, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇯🇵 日本 IPV6', type: trojan, server: hxipv6.hongxingdl.vip, port: 28713, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇺🇸 美国 IPV6', type: trojan, server: hxipv6.hongxingdl.vip, port: 21489, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇰🇷 韩国', type: trojan, server: hxfz940e90d9.bdytul.com, port: 43457, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇩🇪 德国', type: trojan, server: hxfz940e90d9.bdytul.com, port: 21463, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇫🇷 法国', type: trojan, server: hxfz940e90d9.bdytul.com, port: 14651, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇬🇧 英国', type: trojan, server: hxfz940e90d9.bdytul.com, port: 59358, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇳🇱 荷兰', type: trojan, server: hxfz940e90d9.bdytul.com, port: 39851, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇮🇳 印度-西部', type: trojan, server: hxfz940e90d9.bdytul.com, port: 33243, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇨🇱 智利', type: trojan, server: hxfz940e90d9.bdytul.com, port: 54031, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇧🇷 巴西', type: trojan, server: hxfz940e90d9.bdytul.com, port: 28499, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇪🇸 西班牙', type: trojan, server: hxfz940e90d9.bdytul.com, port: 34249, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇨🇭 瑞士', type: trojan, server: hxfz940e90d9.bdytul.com, port: 50140, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇸🇪 瑞典', type: trojan, server: hxfz940e90d9.bdytul.com, port: 59225, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇲🇽 墨西哥', type: trojan, server: hxfz940e90d9.bdytul.com, port: 14571, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇨🇦 加拿大', type: trojan, server: hxfz940e90d9.bdytul.com, port: 50121, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇦🇺 澳大利亚', type: trojan, server: hxfz940e90d9.bdytul.com, port: 50757, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇦🇪 迪拜', type: trojan, server: hxfz940e90d9.bdytul.com, port: 47621, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇿🇦 南非', type: trojan, server: hxfz940e90d9.bdytul.com, port: 53759, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇸🇦 沙特阿拉伯', type: trojan, server: hxfz940e90d9.bdytul.com, port: 59137, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇨🇴 哥伦比亚', type: trojan, server: hxfz940e90d9.bdytul.com, port: 55799, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇮🇱 以色列', type: trojan, server: hxfz940e90d9.bdytul.com, port: 20783, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇻🇳 越南', type: trojan, server: hxfz940e90d9.bdytul.com, port: 59009, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇹🇭 泰国', type: trojan, server: hxfz940e90d9.bdytul.com, port: 43855, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇲🇾 马来西亚', type: trojan, server: hxfz940e90d9.bdytul.com, port: 30383, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇷🇺 莫斯科', type: trojan, server: hxfz940e90d9.bdytul.com, port: 16783, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇵🇭 菲律宾', type: trojan, server: hxfz940e90d9.bdytul.com, port: 58947, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇳🇬 尼日利亚', type: trojan, server: hxfz940e90d9.bdytul.com, port: 34183, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇮🇩 印度尼西亚', type: trojan, server: hxfz940e90d9.bdytul.com, port: 40391, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇹🇷 土耳其', type: trojan, server: hxfz940e90d9.bdytul.com, port: 49569, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇬🇷 希腊', type: trojan, server: hxfz940e90d9.bdytul.com, port: 37473, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇲🇲 缅甸', type: trojan, server: hxfz940e90d9.bdytul.com, port: 19797, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - { name: '🇵🇰 巴基斯坦', type: trojan, server: hxfz940e90d9.bdytul.com, port: 14747, password: 621b6b11-2a77-4b52-b174-afa42875ef32, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  -
+    name: '🇸🇬 AA1新加坡 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23548
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 AA3新加坡 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23550
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 AA4新加坡IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23551
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 AA5美国1 IPLC VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23552
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 AA5美国2 IPLC  VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 234
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 AA5美国3 IPLC VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 21542
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 AA5美国4 IPLC  VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23581
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 AA5美国5 IPLC  VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23582
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 AA5美国6 V2ray 网址:nnbin.com'
+    type: vmess
+    server: mysql1.ali88mysql.com
+    port: 33437
+    uuid: e3bab741-2636-38d5-b75f-b059ab155ad1
+    alterId: 0
+    cipher: auto
+    udp: true
+  -
+    name: '🇯🇵 AA6日本1 IPLC VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23566
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇯🇵 AA6日本2 IPLC VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23567
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇮🇩 AA8印尼 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23584
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇹🇼 AA8台湾1 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23564
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: "🇹🇼 AA8台湾2 支持NF VIP2 网址:nnbin.com\t"
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23553
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇹🇼 AA8台湾3 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23549
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇹🇷 AA8土耳其1 VIP2 网址:ccbbss.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23587
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇧🇷 AA8巴西 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23586
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: "🇩🇪 AA8德国 VIP2 网址:nnbin.com\t"
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23576
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇫🇷 AA8法国 V2ray 网址:nnbin.com'
+    type: vmess
+    server: mysql1.ali88mysql.com
+    port: 33439
+    uuid: e3bab741-2636-38d5-b75f-b059ab155ad1
+    alterId: 0
+    cipher: auto
+    udp: true
+  -
+    name: '🇹🇭 AA8泰国 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23554
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇹🇭 AA8泰国2 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23580
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: 'AA8澳洲 V2ray 网址:nnbin.com'
+    type: vmess
+    server: mysql1.ali88mysql.com
+    port: 33438
+    uuid: e3bab741-2636-38d5-b75f-b059ab155ad1
+    alterId: 0
+    cipher: auto
+    udp: true
+  -
+    name: '🇵🇭 AA8菲律宾 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23583
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: 'AA8西班牙 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23562
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇻🇳 AA8越南 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23555
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇲🇾 AA8马来西亚 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23575
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: "🇲🇾 AA8马来西亚2 VIP2 网址:nnbin.com\t"
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23577
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇷🇺 AA俄罗斯1 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23574
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇨🇦 AA加拿大1 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23572
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇨🇦 AA加拿大2 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23573
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇮🇳 AA印度1 VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23570
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 AA新加坡1 IPLC  支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23579
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 AA新加坡2 IPLC  支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 11196
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 AA新加坡3 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 11120
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 AA新加坡4 IPLC  支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 11197
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 AA新加坡5 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 11198
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 AA新加坡6 IPLC  支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 11199
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇬🇧 AA英国1 IEPL VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23556
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇬🇧 AA英国2 IEPL VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23557
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇬🇧 AA英国3 IEPL VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 23558
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇰🇷 AA韩国1 IPLC  VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 4654
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇰🇷 AA韩国2 IPLC  VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 4655
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 AA香港1 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 24207
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 AA香港2 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 24206
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 AA香港3 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 24205
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 AA香港5 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 24204
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 AA香港6 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 24203
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 AA香港7 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 24202
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 AA香港8 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 24201
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 AA香港9 IPLC 支持NF VIP2 网址:nnbin.com'
+    type: ssr
+    server: mysql1.ali88mysql.com
+    port: 24200
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 A新加坡1 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6021
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 A新加坡2 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6001
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 A新加坡3 VIP1 新网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6002
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 A新加坡4 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 23544
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 A新加坡5 vip1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6004
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 A新加坡6 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6005
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇸🇬 A新加坡7 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6006
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 A香港4 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6007
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 A香港5 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6008
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 A香港6 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6009
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇭🇰 A香港8 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6017
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 c美国1 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6010
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 C美国2 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6011
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 c美国3 VIP1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6012
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇺🇲 c美国4 vip1 网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6013
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇯🇵 日本1 VIP1网址:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6014
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: "🇯🇵 日本2 VIP1网址:nnbin.com\t"
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6015
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇰🇷 韩国1 VIP1 网站:nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6016
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com
+  -
+    name: '🇰🇷 韩国2 VIP1 网址nnbin.com'
+    type: ssr
+    server: mysql2.ali88mysql.com
+    port: 6018
+    cipher: aes-256-cfb
+    password: J3ITPq
+    protocol: auth_aes128_sha1
+    protocolparam: '561165:21081980Mi'
+    protocol-param: '561165:21081980Mi'
+    obfs: http_simple
+    obfsparam: 09bf7561165.microsoft.com
+    obfs-param: 09bf7561165.microsoft.com# ========================
 # 主要端口设置
 # ========================
 port: 7890
@@ -553,5 +1410,6 @@ rule-providers:
   Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
   Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}
 # GateFireWall / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"}
+
 
 
